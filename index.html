@@ -4,24 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Тестовое задание<</title>
+    <title>Тестовое задание</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/solutios/solutions.css" />
   </head>
   <body>
     <h1>Тестовое задание</h1>
     <h2>Front-End</h2>
-    <div class="task">
+    <div class="task" id="task-1">
       <p class="task__descr">
-        <xmp>
-            1) Внутри блока <div>  заданной ширины и высоты (200 на 300 пикселей) находится изображение <img>. 
-                Необходимо сделать вертикальное и горизонтальное выравнивание картинки внутри блока <div>.
-                Размеры изображения не известны. Картинка должна быть обязательно тегом <img>
-                Напишите код реализации (желательно без использования Flexbox)
-                
-        </xmp>
-       
+        1) Внутри блока &lt;div&gt; заданной ширины и высоты (200 на 300
+        пикселей) находится изображение &lt;img&gt;. Необходимо сделать
+        вертикальное и горизонтальное выравнивание картинки внутри блока
+        &lt;div>. Размеры изображения не известны. Картинка должна быть
+        обязательно тегом &lt;img&gt; Напишите код реализации (желательно без
+        использования Flexbox)
       </p>
-      <div class="task__sol" id="task1">
+      <p>Решение в файле solutions.css</p>
+      <button data-task="1">Результат</button>
+      <div class="task__sol" data-sol="1">
         <div class="">
           <img
             src="https://forums.nexusmods.com/uploads/profile/photo-thumb-49904196.jpg?r_=1517471317"
@@ -30,5 +31,132 @@
         </div>
       </div>
     </div>
+    <div class="task" id="task-2">
+      <p class="task__descr">
+        2) Горизонтальное меню сайта реализовано на тегах ul>li>a. Напишите код
+        (желательно без использования Flexbox) равномерного выравнивание пунктов
+        горизонтального меню по ширине (одинаковые отступы между блоками)
+        контейнера.
+      </p>
+      <p>Решение в файле solutions.css</p>
+      <button data-task="2">Результат</button>
+      <div class="task__sol" data-sol="2">
+        <div>
+          <ul>
+            <li><a href="">Пункт 1</a></li>
+            <li><a href="">Пункт 2</a></li>
+            <li><a href="">Пункт 3</a></li>
+            <li><a href="">Пункт 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="task" id="task-3">
+      <p class="task__descr">
+        3) Имеется двухуровневое горизонтальное меню. Напишите код плавного
+        появления и исчезновение второго (выпадающего) уровня меню при наведении
+        на пункт меню первого уровня.
+      </p>
+      <p>Решение в файле solutions.css</p>
+      <button data-task="3">Результат</button>
+      <div class="task__sol" data-sol="3">
+        <div>
+          <ul>
+            <li>
+              Пункт 1
+              <ul>
+                <li>Пункт 1</li>
+                <li>Пункт 2</li>
+                <li>Пункт 3</li>
+                <li>Пункт 4</li>
+              </ul>
+            </li>
+            <li>
+              Пункт 2
+              <ul>
+                <li>Пункт 1</li>
+                <li>Пункт 2</li>
+                <li>Пункт 3</li>
+                <li>Пункт 4</li>
+              </ul>
+            </li>
+            <li>
+              Пункт 3
+              <ul>
+                <li>Пункт 1</li>
+                <li>Пункт 2</li>
+                <li>Пункт 3</li>
+                <li>Пункт 4</li>
+              </ul>
+            </li>
+            <li>
+              Пункт 4
+              <ul>
+                <li>Пункт 1</li>
+                <li>Пункт 2</li>
+                <li>Пункт 3</li>
+                <li>Пункт 4</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="task" id="task-4">
+      <p class="task__descr">
+        4)Напишите код, который позволяет получить и вывести в консоль
+        jquery-элементы с data-атрибутом ID
+      </p>
+      <div>
+        <div data-id="1">Элемент с data-атрибутом ID</div>
+        <div data-id="2">Элемент с data-атрибутом ID</div>
+        <div data-id="3">Элемент с data-атрибутом ID</div>
+      </div>
+      <p>Решение в файле solutions.js</p>
+      <p>Результат в консоли</p>
+    </div>
+    <div class="task" id="task-5">
+      <p class="task__descr">
+        5)Необходимо отсортировать элементы класса .class по высоте и вывести их
+        в по убыванию высоты в родителе .parent Напишите код.
+      </p>
+      <div class="initial">
+        <div class="class">Текст</div>
+        <img
+          src="https://forums.nexusmods.com/uploads/profile/photo-thumb-49904196.jpg?r_=1517471317"
+          class="class"
+          width="100px"
+          height="150px"
+        />
+        <div class="class">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="class">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <button data-task="5">Результат</button>
+      <div class="task__sol" data-sol="5">
+        <div class="parent"></div>
+      </div>
+    </div>
+    <div class="task" id="task-6">
+      <p class="task__descr">
+        6) Необходимо скрывать элементы с data-атрибутом noprint при печати
+        страницы. Напишите код.
+      </p>
+      <div>
+        <div data-noprint>noprint</div>
+        <div data-noprint>noprint</div>
+        <div data-noprint>noprint</div>
+      </div>
+    </div>
+    <p>Решение в файле solutions.css</p>
+    <script src="script.js"></script>
+    <script src="/solutios/solutions.js"></script>
   </body>
 </html>

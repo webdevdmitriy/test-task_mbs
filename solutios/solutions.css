@@ -1,0 +1,62 @@
+/* Первая задача */
+div[data-sol='1'] > div {
+  border: 1px solid black;
+  width: 200px;
+  height: 300px;
+  position: relative;
+}
+div[data-sol='1'] > div > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Вторая задача */
+div[data-sol='2'] > div {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+div[data-sol='2'] > div > ul {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  text-align: justify;
+  line-height: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+div[data-sol='2'] > div > ul:after {
+  width: 100%;
+  content: '';
+  display: inline-block;
+}
+div[data-sol='2'] > div > ul > li {
+  display: inline-block;
+  line-height: normal;
+}
+
+/* Третья задача */
+div[data-sol='3'] li {
+  cursor: pointer;
+}
+div[data-sol='3'] div > ul > li {
+  display: inline-block;
+}
+div[data-sol='3'] div > ul > li > ul {
+  opacity: 0;
+  transition: 2s;
+}
+
+div[data-sol='1-3']div > ul > li:hover > ul {
+  opacity: 1;
+}
+
+/* 5 задача */
+
+/* 6 задача */
+@media print {
+  *[data-noprint] {
+    display: none;
+  }
+}
